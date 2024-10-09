@@ -1,0 +1,450 @@
+/*  Reset básico y estilos generales */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Estilos del encabezado y navegación */
+
+header {
+    padding: 1rem 5%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin-left: 2rem;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.cta-button {
+    background-color: #ffa500;
+    color: #1a1a1a;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Estilos de la sección hogar */
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem 5%;
+    background: linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,0,0.4));
+}
+
+.hero-content {
+    flex: 1;
+    max-width: 50%;
+}
+
+.hero h1 {
+    color: #ffa500;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    margin-bottom: 2rem;
+    color: #cccccc;
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+/* Estilos para la sección de programas */
+
+.program {
+    padding: 5rem 5%;
+    background-color: #222;
+}
+
+.program h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.program-slider {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.slider-arrow {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.program-cards {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 1rem;
+    padding: 1rem 0;
+}
+
+.program-card {
+    flex: 0 0 auto;
+    width: calc(25% - 1rem);
+    background-color: #333;
+    padding: 1.5rem;
+    border-radius: 10px;
+    scroll-snap-align: start;
+}
+
+.program-card .icon {
+    font-size: 2rem;
+    background-color: #ffa500;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.program-card h3 {
+    margin-bottom: 0.5rem;
+}
+
+.program-card p {
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.join-now {
+    color: #ffa500;
+}
+
+
+/* Estilos para la sección de servicios */
+
+    .why-join-us {
+        background-color: #111;
+        color: #fff;
+        padding: 40px 20px;
+        font-family: Arial, sans-serif;
+    }
+    .why-join-us h2 {
+        text-align: center;
+        font-size: 2.5em;
+        margin-bottom: 20px;
+    }
+    .why-join-us p {
+        text-align: center;
+        max-width: 600px;
+        margin: 0 auto 30px;
+        font-size: 1.1em;
+        line-height: 1.5;
+    }
+    .gym-image {
+        width: 30%;
+        height: 470px;
+        max-width: 1100px;
+        margin: 0 auto 30px;
+        display: block;
+        object-fit: cover;
+        border-radius: 60;
+    }
+    .features {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    .feature {
+        flex-basis: 30%;
+        text-align: center;
+        margin-bottom: 20px;
+        background-color: #222;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    .feature img {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 10px;
+    }
+    .feature h3 {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+        color: #f39c12;
+    }
+    .feature p {
+        font-size: 0.9em;
+        margin: 0;
+        text-align: center;
+    }
+    @media (max-width: 768px) {
+        .feature {
+            flex-basis: 100%;
+        }
+    }
+/*   Estilos para la sección de acerca de */
+
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #1a1a1a;
+        color: white;
+    }
+    .navbar {
+        background-color: #333;
+        padding: 1rem;
+        text-align: right;
+    }
+    .navbar a {
+        color: white;
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+    }
+    .pricing-section {
+        max-width: 1200px;
+        margin: 2rem auto;
+        text-align: center;
+    }
+    .pricing-cards {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+    .price-card {
+        background-color: #2a2a2a;
+        border: 1px solid #444;
+        border-radius: 8px;
+        padding: 2rem;
+        width: 300px;
+    }
+    .price {
+        font-size: 2rem;
+        font-weight: bold;
+        margin: 1rem 0;
+    }
+    .features {
+        text-align: left;
+        list-style-type: none;
+        padding: 0;
+    }
+    .features li::before {
+        content: "✓ ";
+        color: #ffa500;
+    }
+    .join-button {
+        background-color: #ffa500;
+        color: black;
+        border: none;
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-top: 1rem;
+    }
+
+/*   Estilos para la sección membresia */
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1E1E1E;
+            color: white;
+        }
+        .review-section {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background-color: #2A2A2A;
+            border-radius: 10px;
+        }
+        .review-title {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .review-content {
+            position: relative;
+            padding-left: 3rem;
+        }
+        .review-content::before {
+            content: '"';
+            font-size: 6rem;
+            color: #B8860B;
+            position: absolute;
+            left: 0;
+            top: -2rem;
+        }
+        .review-text {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+        .review-stars {
+            color: #FFD700;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        .reviewer {
+            display: flex;
+            align-items: center;
+        }
+        .reviewer-image {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin-right: 1rem;
+        }
+        .reviewer-info {
+            display: flex;
+            flex-direction: column;
+        }
+        .reviewer-name {
+            font-weight: bold;
+        }
+        .reviewer-title {
+            color: #888;
+        }
+        .review-nav {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 1rem;
+        }
+        .review-nav button {
+            background: none;
+            border: none;
+            color: #B8860B;
+            font-size: 1.5rem;
+            cursor: pointer;
+            margin-left: 1rem;
+        }
+
+/*   Estilos para la sección footer */
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1E1E1E;
+            color: white;
+        }
+        .footer {
+            background-color: #1E1E1E;
+            padding: 2rem 5%;
+            color: #ffffff;
+        }
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .footer-logo {
+            flex-basis: 25%;
+            margin-bottom: 1rem;
+        }
+        .footer-logo img {
+            max-width: 150px;
+        }
+        .footer-description {
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            max-width: 300px;
+        }
+        .social-icons {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        .social-icon {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #FFA500;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+        .footer-links {
+            display: flex;
+            flex-basis: 70%;
+            justify-content: space-between;
+        }
+        .footer-column {
+            flex-basis: 30%;
+        }
+        .footer-column h3 {
+            color: #FFA500;
+            margin-bottom: 1rem;
+        }
+        .footer-column ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .footer-column ul li {
+            margin-bottom: 0.5rem;
+        }
+        .footer-column ul li a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+        .footer-bottom {
+            margin-top: 2rem;
+            text-align: center;
+            font-size: 0.8rem;
+            color: #888;
+        }
